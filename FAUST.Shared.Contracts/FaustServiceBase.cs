@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Faust.ResourceAccess
+namespace Faust
 {
-    class FaustMigrationsHistoryAccessor 
+    public abstract class FaustServiceBase : ServiceBase
     {
     }
 }
