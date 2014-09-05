@@ -50,8 +50,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FAUST.Engines.FaustEngine\FaustEngine.csproj">
+      <Project>{9575580c-b0a1-484e-a201-7dc7d92d9df1}</Project>
+      <Name>FaustEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FAUST.Shared.Contracts\Contracts.csproj">
+      <Project>{99aeb956-57f4-4686-a1fa-68dc5d886593}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

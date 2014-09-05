@@ -32,6 +32,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
@@ -43,6 +57,7 @@
       <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,6 +73,28 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="unity.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FAUST.Engines.FaustEngine\FaustEngine.csproj">
+      <Project>{9575580c-b0a1-484e-a201-7dc7d92d9df1}</Project>
+      <Name>FaustEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FAUST.Managers.FaustManager\FaustManager.csproj">
+      <Project>{cab355c9-9d72-4e8a-b183-da15f10c2893}</Project>
+      <Name>FaustManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FAUST.ResourceAccess.DatabaseAccessor\DatabaseAccessor.csproj">
+      <Project>{97e772f2-6c74-4da4-8e52-714a354cc64d}</Project>
+      <Name>DatabaseAccessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FAUST.Shared.Contracts\Contracts.csproj">
+      <Project>{99aeb956-57f4-4686-a1fa-68dc5d886593}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FAUST.Shared.DataContracts\DataContracts.csproj">
+      <Project>{8d4e8597-0593-4262-973b-5cb357b27ea3}</Project>
+      <Name>DataContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
