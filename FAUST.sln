@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineTests", "Faust.Tests.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseAccessorTests", "Faust.Tests.DatabaseAccessorTests\DatabaseAccessorTests.csproj", "{5CBD9D12-2CBF-4A4B-8F36-F1FA41E993FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Faust.Shared.Utilities\Utilities.csproj", "{8B512911-10D1-492A-BE6C-4635EC9E8C79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{5CBD9D12-2CBF-4A4B-8F36-F1FA41E993FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CBD9D12-2CBF-4A4B-8F36-F1FA41E993FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CBD9D12-2CBF-4A4B-8F36-F1FA41E993FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B512911-10D1-492A-BE6C-4635EC9E8C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B512911-10D1-492A-BE6C-4635EC9E8C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B512911-10D1-492A-BE6C-4635EC9E8C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B512911-10D1-492A-BE6C-4635EC9E8C79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{0EB7746C-1C14-46BC-A454-5C5DF2C889B8} = {686E3066-D7F9-4302-B857-230809CC317F}
 		{D5496319-266E-46D7-B49D-B4C30EACC266} = {686E3066-D7F9-4302-B857-230809CC317F}
 		{5CBD9D12-2CBF-4A4B-8F36-F1FA41E993FA} = {686E3066-D7F9-4302-B857-230809CC317F}
+		{8B512911-10D1-492A-BE6C-4635EC9E8C79} = {DCDD5824-5FAD-4E72-B8F5-FF11F8E82AD9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45
