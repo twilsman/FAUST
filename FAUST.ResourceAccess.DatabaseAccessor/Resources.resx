@@ -123,8 +123,23 @@
   <data name="Accessors_Created" xml:space="preserve">
     <value>Created {0}</value>
   </data>
+  <data name="Accessors_FindMany" xml:space="preserve">
+    <value>Finding many {0}</value>
+  </data>
+  <data name="Accessors_FoundMany" xml:space="preserve">
+    <value>Found {0} {1}s</value>
+  </data>
+  <data name="Accessors_Updated" xml:space="preserve">
+    <value>Updated {0} with Id: {1}</value>
+  </data>
+  <data name="Accessors_Updating" xml:space="preserve">
+    <value>Updating {0} with Id: {1}</value>
+  </data>
   <data name="Error_CreateEntityParameterNull" xml:space="preserve">
     <value>Entity to create cannot be null</value>
+  </data>
+  <data name="Error_SearchParameterNull" xml:space="preserve">
+    <value>Search parameter cannot be null</value>
   </data>
   <data name="FaustMigrationsHistoryAccessor_FindMany" xml:space="preserve">
     <value>FaustMigrationsHistoryAccessor:  Finding Many</value>

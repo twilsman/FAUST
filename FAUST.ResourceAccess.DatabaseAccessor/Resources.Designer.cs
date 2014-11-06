@@ -79,11 +79,56 @@ namespace Faust.ResourceAccess {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Finding many {0}.
+        /// </summary>
+        internal static string Accessors_FindMany {
+            get {
+                return ResourceManager.GetString("Accessors_FindMany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Found {0} {1}s.
+        /// </summary>
+        internal static string Accessors_FoundMany {
+            get {
+                return ResourceManager.GetString("Accessors_FoundMany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Updated {0} with Id: {1}.
+        /// </summary>
+        internal static string Accessors_Updated {
+            get {
+                return ResourceManager.GetString("Accessors_Updated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Updating {0} with Id: {1}.
+        /// </summary>
+        internal static string Accessors_Updating {
+            get {
+                return ResourceManager.GetString("Accessors_Updating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Entity to create cannot be null.
         /// </summary>
         internal static string Error_CreateEntityParameterNull {
             get {
                 return ResourceManager.GetString("Error_CreateEntityParameterNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search parameter cannot be null.
+        /// </summary>
+        internal static string Error_SearchParameterNull {
+            get {
+                return ResourceManager.GetString("Error_SearchParameterNull", resourceCulture);
             }
         }
         
