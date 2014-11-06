@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="IFaustAccessor.cs" />
     <Compile Include="IFaustEngine.cs" />
+    <Compile Include="IFaustManager.cs" />
     <Compile Include="IFaustMigrationsHistoryAccessor.cs" />
     <Compile Include="ILoggerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -61,7 +61,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,6 +71,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FaustManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,9 +79,21 @@
       <Project>{9575580c-b0a1-484e-a201-7dc7d92d9df1}</Project>
       <Name>FaustEngine</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FAUST.ResourceAccess.DatabaseAccessor\DatabaseAccessor.csproj">
+      <Project>{97e772f2-6c74-4da4-8e52-714a354cc64d}</Project>
+      <Name>DatabaseAccessor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FAUST.Shared.Contracts\Contracts.csproj">
       <Project>{99aeb956-57f4-4686-a1fa-68dc5d886593}</Project>
       <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FAUST.Shared.DataContracts\DataContracts.csproj">
+      <Project>{8d4e8597-0593-4262-973b-5cb357b27ea3}</Project>
+      <Name>DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Faust.Shared.Utilities\Utilities.csproj">
+      <Project>{8b512911-10d1-492a-be6c-4635ec9e8c79}</Project>
+      <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -79,6 +79,24 @@ namespace Faust.ResourceAccess {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Deleted {0}.
+        /// </summary>
+        internal static string Accessors_Deleted {
+            get {
+                return ResourceManager.GetString("Accessors_Deleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deleted {0} {1}s.
+        /// </summary>
+        internal static string Accessors_DeletedMany {
+            get {
+                return ResourceManager.GetString("Accessors_DeletedMany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Finding many {0}.
         /// </summary>
         internal static string Accessors_FindMany {
@@ -120,6 +138,15 @@ namespace Faust.ResourceAccess {
         internal static string Error_CreateEntityParameterNull {
             get {
                 return ResourceManager.GetString("Error_CreateEntityParameterNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entity to delete cannot be null.
+        /// </summary>
+        internal static string Error_DeleteEntityParameterNull {
+            get {
+                return ResourceManager.GetString("Error_DeleteEntityParameterNull", resourceCulture);
             }
         }
         

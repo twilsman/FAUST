@@ -123,6 +123,12 @@
   <data name="Accessors_Created" xml:space="preserve">
     <value>Created {0}</value>
   </data>
+  <data name="Accessors_Deleted" xml:space="preserve">
+    <value>Deleted {0}</value>
+  </data>
+  <data name="Accessors_DeletedMany" xml:space="preserve">
+    <value>Deleted {0} {1}s</value>
+  </data>
   <data name="Accessors_FindMany" xml:space="preserve">
     <value>Finding many {0}</value>
   </data>
@@ -137,6 +143,9 @@
   </data>
   <data name="Error_CreateEntityParameterNull" xml:space="preserve">
     <value>Entity to create cannot be null</value>
+  </data>
+  <data name="Error_DeleteEntityParameterNull" xml:space="preserve">
+    <value>Entity to delete cannot be null</value>
   </data>
   <data name="Error_SearchParameterNull" xml:space="preserve">
     <value>Search parameter cannot be null</value>

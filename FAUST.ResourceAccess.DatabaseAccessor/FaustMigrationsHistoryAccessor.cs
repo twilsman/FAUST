@@ -97,6 +97,41 @@ namespace Faust.ResourceAccess
             return result;
         }
 
+        public FaustMigrationHistory Delete(FaustMigrationHistory entity, UserContext userContext)
+        {
+            if (entity == null) throw new ArgumentException(Resources.Error_DeleteEntityParameterNull, "entity");
+
+            using (var db = new FaustDB(userContext))
+            {
+                db.Entry(entity).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+
+            Logger.Log(string.Format(Resources.Accessors_Deleted, typeof(FaustMigrationHistory).Name), TraceEventType.Verbose);
+
+            return entity;
+        }
+
+        public virtual FaustMigrationHistory[] DeleteMany(FaustMigrationHistory searchCriteria, UserContext userContext)
+        {
+            if (searchCriteria == null) throw new ArgumentException(Resources.Error_SearchParameterNull, "searchCriteria");
+
+            FaustMigrationHistory[] foundArray = FindMany(searchCriteria, userContext);
+
+            using (var db = new FaustDB(userContext))
+            {
+                foreach (FaustMigrationHistory entity in foundArray)
+                {
+                    db.Entry(entity).State = EntityState.Deleted;
+                }
+                db.SaveChanges();
+            }
+
+            Logger.Log(string.Format(Resources.Accessors_DeletedMany, foundArray.Length, typeof(FaustMigrationHistory).Name), TraceEventType.Verbose);
+
+            return foundArray;
+        }
+
         public FaustMigrationHistory[] DeleteDebugEntries(UserContext userContext)
         {
             Logger.Log("FaustMigrationsHistoryAccessor - Deleting all debug Migration Histories", TraceEventType.Verbose);

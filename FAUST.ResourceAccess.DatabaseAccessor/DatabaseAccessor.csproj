@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FaustAccessor.cs" />
     <Compile Include="FaustDB.cs" />
     <Compile Include="FaustMigrationsHistoryAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
