@@ -62,6 +62,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -99,6 +100,13 @@
       <Project>{8d4e8597-0593-4262-973b-5cb357b27ea3}</Project>
       <Name>DataContracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Faust.Shared.Utilities\Utilities.csproj">
+      <Project>{8b512911-10d1-492a-be6c-4635ec9e8c79}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="migrations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,5 @@
+C:\workspaces\FAUST\Faust.Tests.ManagerTests\Fakes\Faust.Shared.Contracts.fakes : warning : Cannot generate shim for Faust.IFaustAccessor: type is an interface.
+C:\workspaces\FAUST\Faust.Tests.ManagerTests\Fakes\Faust.Shared.Contracts.fakes : warning : Cannot generate shim for Faust.IFaustEngine: type is an interface.
+C:\workspaces\FAUST\Faust.Tests.ManagerTests\Fakes\Faust.Shared.Contracts.fakes : warning : Cannot generate shim for Faust.IFaustManager: type is an interface.
+C:\workspaces\FAUST\Faust.Tests.ManagerTests\Fakes\Faust.Shared.Contracts.fakes : warning : Cannot generate shim for Faust.IFaustMigrationsHistoryAccessor: type is an interface.
+C:\workspaces\FAUST\Faust.Tests.ManagerTests\Fakes\Faust.Shared.Contracts.fakes : warning : Cannot generate shim for Faust.ILoggerService: type is an interface.

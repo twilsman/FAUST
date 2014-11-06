@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Faust.Shared.Contracts.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Faust.Fakes.StubIFaustAccessor">
+            <summary>Stub type of Faust.IFaustAccessor</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIFaustAccessor</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustAccessor.ExecuteSqlCommandStringUserContext">
+            <summary>Sets the stub of IFaustAccessor.ExecuteSqlCommand(String sqlCommand, UserContext userContext)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustAccessor.fsc::Faust#IFaustAccessor#ExecuteSqlCommand(System.String,Faust.UserContext)">
+            <summary>Sets the stub of IFaustAccessor.ExecuteSqlCommand(String sqlCommand, UserContext userContext)</summary>
+        </member>
+        <member name="T:Faust.Fakes.StubIFaustEngine">
+            <summary>Stub type of Faust.IFaustEngine</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustEngine.#ctor">
+            <summary>Initializes a new instance of type StubIFaustEngine</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustEngine.fsc::Faust#IFaustEngine#GetReleaseMigrationScripts(System.IO.DirectoryInfo,Faust.UserContext)">
+            <summary>Sets the stub of IFaustEngine.GetReleaseMigrationScripts(DirectoryInfo release, UserContext userContext)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustEngine.fsc::Faust#IFaustEngine#RunMigrationScript(Faust.FaustMigrationScript,Faust.UserContext)">
+            <summary>Sets the stub of IFaustEngine.RunMigrationScript(FaustMigrationScript script, UserContext userContext)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustEngine.fsc::Faust#IFaustEngine#SaveMigrationsHistory(Faust.FaustMigrationHistory[],Faust.UserContext)">
+            <summary>Sets the stub of IFaustEngine.SaveMigrationsHistory(FaustMigrationHistory[] migrationHistories, UserContext userContext)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustEngine.GetReleaseMigrationScriptsDirectoryInfoUserContext">
+            <summary>Sets the stub of IFaustEngine.GetReleaseMigrationScripts(DirectoryInfo release, UserContext userContext)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustEngine.RunMigrationScriptFaustMigrationScriptUserContext">
+            <summary>Sets the stub of IFaustEngine.RunMigrationScript(FaustMigrationScript script, UserContext userContext)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustEngine.SaveMigrationsHistoryFaustMigrationHistoryArrayUserContext">
+            <summary>Sets the stub of IFaustEngine.SaveMigrationsHistory(FaustMigrationHistory[] migrationHistories, UserContext userContext)</summary>
+        </member>
+        <member name="T:Faust.Fakes.StubIFaustManager">
+            <summary>Stub type of Faust.IFaustManager</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustManager.#ctor">
+            <summary>Initializes a new instance of type StubIFaustManager</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustManager.fsc::Faust#IFaustManager#RunMigration(System.String)">
+            <summary>Sets the stub of IFaustManager.RunMigration(String databaseName)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustManager.RunMigrationString">
+            <summary>Sets the stub of IFaustManager.RunMigration(String databaseName)</summary>
+        </member>
+        <member name="T:Faust.Fakes.StubIFaustMigrationsHistoryAccessor">
+            <summary>Stub type of Faust.IFaustMigrationsHistoryAccessor</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIFaustMigrationsHistoryAccessor</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.CreateFaustMigrationHistoryUserContext">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.Create(FaustMigrationHistory entity, UserContext userContext)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.DeleteDebugEntriesUserContext">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.DeleteDebugEntries(UserContext userContext)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.fsc::Faust#IFaustMigrationsHistoryAccessor#Create(Faust.FaustMigrationHistory,Faust.UserContext)">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.Create(FaustMigrationHistory entity, UserContext userContext)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.fsc::Faust#IFaustMigrationsHistoryAccessor#DeleteDebugEntries(Faust.UserContext)">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.DeleteDebugEntries(UserContext userContext)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.fsc::Faust#IFaustMigrationsHistoryAccessor#FindMany(Faust.FaustMigrationHistory,Faust.UserContext)">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.FindMany(FaustMigrationHistory searchCriteria, UserContext userContext)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.fsc::Faust#IFaustMigrationsHistoryAccessor#Initialize(Faust.UserContext)">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.Initialize(UserContext userContext)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.fsc::Faust#IFaustMigrationsHistoryAccessor#Update(Faust.FaustMigrationHistory,Faust.UserContext)">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.Update(FaustMigrationHistory entity, UserContext userContext)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.FindManyFaustMigrationHistoryUserContext">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.FindMany(FaustMigrationHistory searchCriteria, UserContext userContext)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.InitializeUserContext">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.Initialize(UserContext userContext)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubIFaustMigrationsHistoryAccessor.UpdateFaustMigrationHistoryUserContext">
+            <summary>Sets the stub of IFaustMigrationsHistoryAccessor.Update(FaustMigrationHistory entity, UserContext userContext)</summary>
+        </member>
+        <member name="T:Faust.Fakes.StubILoggerService">
+            <summary>Stub type of Faust.ILoggerService</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubILoggerService.#ctor">
+            <summary>Initializes a new instance of type StubILoggerService</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubILoggerService.fsc::Faust#ILoggerService#Log(System.String,System.Diagnostics.TraceEventType,System.String)">
+            <summary>Sets the stub of ILoggerService.Log(String message, TraceEventType severity, String category)</summary>
+        </member>
+        <member name="M:Faust.Fakes.StubILoggerService.fsc::Faust#ILoggerService#TestMe(System.String)">
+            <summary>Sets the stub of ILoggerService.TestMe(String input)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubILoggerService.LogStringTraceEventTypeString">
+            <summary>Sets the stub of ILoggerService.Log(String message, TraceEventType severity, String category)</summary>
+        </member>
+        <member name="F:Faust.Fakes.StubILoggerService.TestMeString">
+            <summary>Sets the stub of ILoggerService.TestMe(String input)</summary>
+        </member>
+    </members>
+</doc>

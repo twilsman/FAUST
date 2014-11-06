@@ -20,13 +20,13 @@ namespace Faust.Engines
             IEnumerable<FileInfo> files = release.EnumerateFiles().Where(file => file.Extension == ".sql");
 
             return files.Select(file => new FaustMigrationScript
-            {
-                ReleaseNumber = int.Parse(file.Directory.Name),
-                ScriptName = file.Name,
-                FilePath = file.FullName,
-                Successful = null,
-                Commands = GetSqlCommands(file),
-            })
+                                {
+                                    ReleaseNumber = int.Parse(file.Directory.Name),
+                                    ScriptName = file.Name,
+                                    FilePath = file.FullName,
+                                    Successful = null,
+                                    Commands = GetSqlCommands(file),
+                                })
                         .Where(script => UnityCache.Resolve<IFaustMigrationsHistoryAccessor>()
                                                 .FindMany(new FaustMigrationHistory
                                                 {

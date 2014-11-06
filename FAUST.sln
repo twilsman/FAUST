@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Managers", "1.Managers", "{3330A392-8A69-4D0D-A94C-DAA3B172AB24}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Managers", "2.Managers", "{3330A392-8A69-4D0D-A94C-DAA3B172AB24}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Engines", "2.Engines", "{BA2F5E10-EF38-439A-A753-C2A4D2D30038}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Engines", "3.Engines", "{BA2F5E10-EF38-439A-A753-C2A4D2D30038}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Shared", "3.Shared", "{DCDD5824-5FAD-4E72-B8F5-FF11F8E82AD9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Shared", "5.Shared", "{DCDD5824-5FAD-4E72-B8F5-FF11F8E82AD9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.ResourceAccess", "4.ResourceAccess", "{D88488D9-6C1F-47F8-A549-B8A3A32E662D}"
 EndProject
@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaustEngine", "FAUST.Engine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseAccessor", "FAUST.ResourceAccess.DatabaseAccessor\DatabaseAccessor.csproj", "{97E772F2-6C74-4DA4-8E52-714A354CC64D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Tests", "5.Tests", "{686E3066-D7F9-4302-B857-230809CC317F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Tests", "6.Tests", "{686E3066-D7F9-4302-B857-230809CC317F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerTests", "Faust.Tests.ManagerTests\ManagerTests.csproj", "{0EB7746C-1C14-46BC-A454-5C5DF2C889B8}"
 EndProject
@@ -30,6 +30,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseAccessorTests", "Faust.Tests.DatabaseAccessorTests\DatabaseAccessorTests.csproj", "{5CBD9D12-2CBF-4A4B-8F36-F1FA41E993FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Faust.Shared.Utilities\Utilities.csproj", "{8B512911-10D1-492A-BE6C-4635EC9E8C79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Clients", "1.Clients", "{B7ABBCF1-746A-45F5-808D-FBA0C9983BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faust", "FAUST\Faust.csproj", "{E5E39126-7FDC-4BC1-AE5D-323B39C46901}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +77,10 @@ Global
 		{8B512911-10D1-492A-BE6C-4635EC9E8C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B512911-10D1-492A-BE6C-4635EC9E8C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B512911-10D1-492A-BE6C-4635EC9E8C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E39126-7FDC-4BC1-AE5D-323B39C46901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E39126-7FDC-4BC1-AE5D-323B39C46901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E39126-7FDC-4BC1-AE5D-323B39C46901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E39126-7FDC-4BC1-AE5D-323B39C46901}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +95,7 @@ Global
 		{D5496319-266E-46D7-B49D-B4C30EACC266} = {686E3066-D7F9-4302-B857-230809CC317F}
 		{5CBD9D12-2CBF-4A4B-8F36-F1FA41E993FA} = {686E3066-D7F9-4302-B857-230809CC317F}
 		{8B512911-10D1-492A-BE6C-4635EC9E8C79} = {DCDD5824-5FAD-4E72-B8F5-FF11F8E82AD9}
+		{E5E39126-7FDC-4BC1-AE5D-323B39C46901} = {B7ABBCF1-746A-45F5-808D-FBA0C9983BBB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45
