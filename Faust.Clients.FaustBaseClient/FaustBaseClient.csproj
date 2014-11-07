@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10981D22-DEFB-4028-9EDA-0B44E47EF5C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Faust.Clients.FaustBaseClient</RootNamespace>
+    <AssemblyName>FaustBaseClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.1.1.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\LINQKit.1.1.1\lib\net45\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\FAUST.Engines.FaustEngine\FaustEngine.cs">
+      <Link>2.Engines\FaustEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Managers.FaustManager\FaustManager.cs">
+      <Link>1.Managers\FaustManager.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.ResourceAccess.DatabaseAccessor\FaustAccessor.cs">
+      <Link>3.ResourceAccess\FaustAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.ResourceAccess.DatabaseAccessor\FaustDB.cs">
+      <Link>3.ResourceAccess\FaustDB.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.ResourceAccess.DatabaseAccessor\FaustMigrationsHistoryAccessor.cs">
+      <Link>3.ResourceAccess\FaustMigrationsHistoryAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.ResourceAccess.DatabaseAccessor\Resources.Designer.cs">
+      <Link>3.ResourceAccess\Resources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Shared.Contracts\IFaustAccessor.cs">
+      <Link>4.Shared\IFaustAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Shared.Contracts\IFaustEngine.cs">
+      <Link>4.Shared\IFaustEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Shared.Contracts\IFaustManager.cs">
+      <Link>4.Shared\IFaustManager.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Shared.Contracts\IFaustMigrationsHistoryAccessor.cs">
+      <Link>4.Shared\IFaustMigrationsHistoryAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Shared.Contracts\ILoggerService.cs">
+      <Link>4.Shared\ILoggerService.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Shared.DataContracts\FaustMigrationHistory.cs">
+      <Link>4.Shared\FaustMigrationHistory.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Shared.DataContracts\FaustMigrationScript.cs">
+      <Link>4.Shared\FaustMigrationScript.cs</Link>
+    </Compile>
+    <Compile Include="..\FAUST.Shared.DataContracts\UserContext.cs">
+      <Link>4.Shared\UserContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Faust.Shared.Utilities\Logger.cs">
+      <Link>4.Shared\Logger.cs</Link>
+    </Compile>
+    <Compile Include="..\Faust.Shared.Utilities\LoggerService.cs">
+      <Link>4.Shared\LoggerService.cs</Link>
+    </Compile>
+    <Compile Include="..\Faust.Shared.Utilities\Settings.cs">
+      <Link>4.Shared\Settings.cs</Link>
+    </Compile>
+    <Compile Include="..\Faust.Shared.Utilities\UnityCache.cs">
+      <Link>4.Shared\UnityCache.cs</Link>
+    </Compile>
+    <Compile Include="FaustBaseClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\FAUST.ResourceAccess.DatabaseAccessor\Resources.resx">
+      <Link>3.ResourceAccess\Resources.resx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Clients", "1.Clients", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faust", "FAUST\Faust.csproj", "{E5E39126-7FDC-4BC1-AE5D-323B39C46901}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaustBaseClient", "Faust.Clients.FaustBaseClient\FaustBaseClient.csproj", "{10981D22-DEFB-4028-9EDA-0B44E47EF5C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{E5E39126-7FDC-4BC1-AE5D-323B39C46901}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5E39126-7FDC-4BC1-AE5D-323B39C46901}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5E39126-7FDC-4BC1-AE5D-323B39C46901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10981D22-DEFB-4028-9EDA-0B44E47EF5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10981D22-DEFB-4028-9EDA-0B44E47EF5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10981D22-DEFB-4028-9EDA-0B44E47EF5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10981D22-DEFB-4028-9EDA-0B44E47EF5C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +102,7 @@ Global
 		{5CBD9D12-2CBF-4A4B-8F36-F1FA41E993FA} = {686E3066-D7F9-4302-B857-230809CC317F}
 		{8B512911-10D1-492A-BE6C-4635EC9E8C79} = {DCDD5824-5FAD-4E72-B8F5-FF11F8E82AD9}
 		{E5E39126-7FDC-4BC1-AE5D-323B39C46901} = {B7ABBCF1-746A-45F5-808D-FBA0C9983BBB}
+		{10981D22-DEFB-4028-9EDA-0B44E47EF5C1} = {B7ABBCF1-746A-45F5-808D-FBA0C9983BBB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45
